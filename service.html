@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+    
+        <title>上征科技-seezoon.com_让你的企业互联网化更简单</title>
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="keywords" content="上征,上征科技,软件外包,软件开发,网页制作,微信开发，APP定做，智能家居，微信物联网">
+        <meta name="description" content="上征科技致力于解决中小企业及创业者软件开发成本高，周期长，难于维护升级的问题，我们提供一流的技术，超低的价格，优良的售后。为企业打造全面的互联网平台。">
+        <link rel="stylesheet" href="css/main-index.css">
+        <link rel="stylesheet" href="css/media-index.css">
+        <link href="images/fav.png" rel="shortcut icon" type="image/x-icon">
+        <script charset="utf-8" src="js/v.js"></script><script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/supermarquee.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/media.js"></script>
+        <script src="js/jquery.fullPage.min.js"></script>
+        <link rel="stylesheet" href="css/jquery.fullPage.css">
+        <style>
+        .section1 { background: url(images/1.jpg) ;}
+        .section2 { background: url(images/2.jpg) ;}
+        .section3 { background: url(images/3.jpg); }
+        .section4 { background: url(images/4.jpg);}
+        </style>
+        <script>
+        var scrollFunc = function (e) {
+        var direct = 0;
+         e = e || window.event;
+            if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件             
+                if (e.wheelDelta > 0) { //当滑轮向上滚动时
+                    //alert("滑轮向上滚动");
+                    $("#header").show();
+                }
+                if (e.wheelDelta < 0) { //当滑轮向下滚动时
+                   // alert("滑轮向下滚动");
+                   $("#header").hide();
+                }
+            } else if (e.detail) {  //Firefox滑轮事件
+                if (e.detail> 0) { //当滑轮向上滚动时
+                   // alert("滑轮向上滚动");
+                   $("#header").show();
+                }
+                if (e.detail< 0) { //当滑轮向下滚动时
+                   // alert("滑轮向下滚动");
+                    $("#header").hide();
+                }
+            }
+             ScrollText(direct);
+          }
+        //给页面绑定滑轮滚动事件
+        if (document.addEventListener) {
+           document.addEventListener('DOMMouseScroll', scrollFunc, false);
+        }
+        //滚动滑轮触发scrollFunc方法
+         window.onmousewheel = document.onmousewheel = scrollFunc;  
+        $(function(){
+            $('#dowebok').fullpage({
+                verticalCentered:false,
+                css3:true,
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                'navigation': true,
+                'navigationPosition': 'right',
+                afterLoad: function(anchorLink, index){
+                    
+                    if (index == 1){
+                        $("#header").show();
+                    } else {
+                        $("#header").hide();
+                    }
+                    
+                },
+                onLeave: function(index, direction){
+                    if (index == 1){
+                        $("#header").show();
+                    } else {
+                        $("#header").hide();
+                    }
+                }
+            });
+        });
+        </script>
+    </head>
+
+    <!-- 首页 begin-->
+<body>
+    <div class="header" id="header" >
+        <div class="header-main">
+            <div class="header-l fl">
+                <div class="logo fl">
+                    <a style="background-image:url(images/logo_index.png)" href="index.html">上征科技</a>
+                </div>
+                <ul class="nav fl">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="service.html">技术服务</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+            </div>      
+        </div>
+    <em class="hd-tiger"></em></div>
+       
+<div id="dowebok">
+        <div class="section section1">
+        	<div class="service-inf">
+			<h3>精益求精力求完美</h3>
+            <p>扣细节，提质量WEB设计开发，注重树立品牌形象,提升品牌档次，探索大众需求，让企业形象以完美的姿态展现于市场，选择我们重塑品牌刻不容缓。</p>
+            </div>
+            <div class="pc-img"></div>
+        </div>
+        <div class="section section2">
+            <div class="app-inf">
+			<h3>移动端助力</h3>
+            <p>在智能手机普及的情况下，Android Ios 运用层出不穷，都希望在移动端又一席之地。交给我们，在移动端也为你们助力。
+                                打造完整的生态体系。</p>
+            </div>
+            <div class="app-img"></div>
+        </div>
+        <div class="section section3">
+        	<div class="wx-img"></div>
+        	<div class="wechat-font">
+                <h3>微信平台服务</h3>
+                <p>微信这几年的飞速发展，尤其是服务号，企业号的的推出，各种基于微信网站比比皆是，微信强大的用户群体，给微信运用的推广带来了很多便利。网站接入微信支付更是锦上添花，在为用户提供便利的同时，也给中小企业及创业者，快速带来收益。微信整合物联网，这又是未来一大趋势。上征科技也积极的参与，在微信硬件平台上深入的知识积累，时刻准备为创业的您提供服务。</p>
+            </div>
+        </div>
+        <div class="section section4">
+        	<div class="cooperate-font">
+            <h3>上征科技，您的技术合作伙伴</h3>
+            <p>中小企业创业者有好的idea实现起来成本高，没有专业的技术团队，好点子也可以会因为技术能力而搁置，上征科技就提供了这样一个平台，
+                        降低成本，提高项目质量与缩短项目周期是我们的宗旨。我们会切身的为每一个创业者着想，和你们一起，实现这个idea。</p>
+            </div>
+            <div class="hz-img"></div>
+        </div>
+    </div>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?41ea3dc3757955315bba6a301fe5779f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
